@@ -1,0 +1,30 @@
+{
+  "name": "errand-services",
+  "version": "1.0.0",
+  "description": "An OOP concept that implements the operation of an errand service company",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hector101/home-study-day-1.git"
+  },
+  "keywords": [
+    "errand",
+    "oop",
+    "inheritance",
+    "encapsulation",
+    "polymorphism",
+    "constructor"
+  ],
+  "author": "Johnson Okoro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hector101/home-study-day-1/issues"
+  },
+  "homepage": "https://github.com/Hector101/home-study-day-1#readme",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
