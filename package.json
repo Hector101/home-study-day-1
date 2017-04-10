@@ -1,17 +1,17 @@
 {
   "name": "errand-services",
   "version": "1.0.0",
-  "description": "An OOP concept that implements the operation of an errand service company",
+  "description": "An OOP concept that implements Vehicle manufacturing",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/jasmine-node spec"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hector101/home-study-day-1.git"
   },
   "keywords": [
-    "errand",
+    "Vehicle",
     "oop",
     "inheritance",
     "encapsulation",

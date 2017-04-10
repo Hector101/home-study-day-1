@@ -70,9 +70,12 @@ Cars.prototype = new Vehicle();
 //instializing the Car instance called toyota
 let toyota = new Cars("Toyota", "VS-3342");
 
-console.log(toyota.isMoving);
+//console.log(toyota.isMoving);
 
 // inheriting from the parent object Vehicle to Bicycle object
 Bicycle.prototype = new Vehicle();
 //instializing the Car instance called toyota
 let maruwa = new Cars("Maruwa", "TY-33LP2");
+
+module.exports = toyota;
+module.exports = maruwa;
