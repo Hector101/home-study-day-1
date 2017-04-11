@@ -21,7 +21,7 @@ Vehicle.prototype.name = function(name) {
 }
 
 //Method to set the model of the Vehicle object
-Vehicle.prototype.model = function(model) {
+Vehicle.prototype.setModel = function(model) {
 	this.model = model;
 }
 
@@ -30,31 +30,34 @@ Vehicle.prototype.start = function() {
 	this.isMoving = false;
 	this.isStatic = true;
 	this.status = 'Started';
-    //Encapsulation 
-	this.initialAcceleration = function() {
-		let speed = 0;
-        return speed;
-	}
+    /*
+    	encapsulation that makes the speed local to the start method
+    	that can't be manipulated from ouside.
+    */ 
+	let speed = 0;
+    return speed;
 }
 //Method to accelerate the Vehicle
 Vehicle.prototype.move = function() {
 	this.isMoving = true;
 	this.isStatic = false;
 	this.status = 'Accelerated';
-    //Encapsulation 
-	this.initialAcceleration = function() {
-		let speed = 60;
-        return speed;
-	}
-}
+    /*
+    	encapsulation that makes the speed local to the move method
+    	that can't be manipulated from ouside.
+    */ 
+	let speed = 60;
+    return speed;
+ }
 //Method to off the Vehicle
 Vehicle.prototype.off = function() {
-	if(!this.isMoving || !this.isStatic) {
-		throw new Error('vehicle not started');
+	if(this.isMoving === undefined || this.isStatic === undefined) {
+		throw new Error('not started');
+	}else{
+		this.isMoving = false;
+		this.isStatic = true;
+		this.status = 'off';
 	}
-    this.isMoving = false;
-	this.isStatic = true;
-	this.status = 'off';
 }
 
 
@@ -77,5 +80,5 @@ Bicycle.prototype = new Vehicle();
 //instializing the Car instance called toyota
 let maruwa = new Cars("Maruwa", "TY-33LP2");
 
-module.exports = toyota;
-module.exports = maruwa;
+module.exports.toyota = toyota;
+module.exports.maruwa = maruwa;
