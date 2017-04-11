@@ -24,7 +24,5 @@
     "url": "https://github.com/Hector101/home-study-day-1/issues"
   },
   "homepage": "https://github.com/Hector101/home-study-day-1#readme",
-  "dependencies": {
-    "jasmine-node": "^1.14.5"
-  }
+  "dependencies": {}
 }
